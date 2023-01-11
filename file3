@@ -23,5 +23,5 @@ long long Max_Prime(long long  x)
 int main()
 {
     std::cout << Max_Prime(600851475143);
-    return 0;
+    return 0;    
 }
