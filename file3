@@ -1,0 +1,27 @@
+#include<iostream>
+
+long long int Max_Prime(long long int  x)
+{
+    long long int i, y;
+    i = 2;
+    y = x;
+    while (x != 1)
+    {
+        if (x % i == 0)
+        {
+            y = i;
+            x /= i;
+        }
+        else if (i * i > x)
+            i = x;
+        else
+            i++;
+    }
+    return y;
+}
+
+int main()
+{
+    std::cout << Max_Prime(600851475143);
+    return 0;
+}
