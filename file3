@@ -1,8 +1,8 @@
 #include<iostream>
 
-long long int Max_Prime(long long int  x)
+long long Max_Prime(long long  x)
 {
-    long long int i, y;
+    long long i, y;
     i = 2;
     y = x;
     while (x != 1)
